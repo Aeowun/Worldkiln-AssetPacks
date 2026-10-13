@@ -2,7 +2,14 @@
 
 **Independent asset downloads.** This repository hosts **optional** asset-only GitHub Releases for Worldkiln, separately from engine installers and release candidates. No pack is required to create a blank project.
 
-## Small downloads — now available
+## Current in-editor catalogue: v1.2.0
+
+The official [v1.2.0 curated catalogue](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.2.0) keeps **13 optional CC0 game-building packs** from this asset repository. Worldkiln also includes **2 selectable starter material packs** from the main Worldkiln release, giving **15 catalogue choices total**. This is now the authoritative in-editor list.
+
+Chosen for useful game construction: characters; full Nature, Survival, Pirate and Furniture collections; smaller Trees, Plants, Rocks, Nature Props, Ships, Pirate Props, Survival Tools and Chairs packs. Removed from catalogue discovery: the prototype/debug textures, 18 repetitive character-per-letter choices, and surplus individual-object duplicates. Old published ZIPs and immutable pack versions remain accessible for existing projects; they were **not deleted or modified**.
+
+[Download the current catalogue manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.2.0/assets-manifest.json). Refresh the in-editor Asset Catalogue to load the new selection. New-project assets are optional; all selected packs preserve original Kenney CC0 1.0 licensing.
+## Archived extended selection: v1.1.0
 
 The [v1.1.0 release](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.1.0) publishes **49 new micro-pack ZIPs** independently from the complete v1.0.0 packs, plus the complete Kenney Furniture Kit. The combined catalogue holds **54 selectable packs**, including 18 individual character packs, 15 single-prop packs and themed subsets of trees, plants, rocks, nature props, pirate ships, pirate props, survival camping, survival tools, chairs, tables, beds, storage and prototype texture colors. The original five complete packs remain available at v1.0.0.
 

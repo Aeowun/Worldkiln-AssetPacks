@@ -2,13 +2,25 @@
 
 **Independent asset downloads.** This repository hosts **optional** asset-only GitHub Releases for Worldkiln, separately from engine installers and release candidates. No pack is required to create a blank project.
 
-## Current in-editor catalogue: v1.2.0
+## Current in-editor catalogue: v1.3.0
 
-The official [v1.2.0 curated catalogue](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.2.0) keeps **13 optional CC0 game-building packs** from this asset repository. Worldkiln also includes **2 selectable starter material packs** from the main Worldkiln release, giving **15 catalogue choices total**. This is now the authoritative in-editor list.
+The [v1.3.0 game-building catalogue](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.3.0) offers **13 optional asset-only packs** from this repository, plus the two existing Starter Material packs from the Worldkiln engine release: **15 selectable choices total**. Blank/offline projects do not require any asset pack.
 
-Chosen for useful game construction: characters; full Nature, Survival, Pirate and Furniture collections; smaller Trees, Plants, Rocks, Nature Props, Ships, Pirate Props, Survival Tools and Chairs packs. Removed from catalogue discovery: the prototype/debug textures, 18 repetitive character-per-letter choices, and surplus individual-object duplicates. Old published ZIPs and immutable pack versions remain accessible for existing projects; they were **not deleted or modified**.
+**Native-install verified replacements:**
+- [Kenney Pirate Kit v2.2.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.3.0/kenney-pirate-kit-2.2.0.zip) — 130 native Actors in the isolated project test.
+- [Kenney Survival Kit v2.1.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.3.0/kenney-survival-kit-2.1.0.zip) — 91 native Actors.
+- [Pirate Props v1.1.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.3.0/pirate-props-1.1.0.zip) — 16 native Actors.
 
-[Download the current catalogue manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.2.0/assets-manifest.json). Refresh the in-editor Asset Catalogue to load the new selection. New-project assets are optional; all selected packs preserve original Kenney CC0 1.0 licensing.
+Worldkiln does not yet support node-animated chests as static Actors. These compatible variants **retain chest meshes and material references but make the chests static**, omitting their original `open`, `close` and `open-close` glTF animation clips. **The original animated archives remain unchanged in the earlier v1.0.0 and v1.1.0 releases**. No other packaged model or texture contents were changed for the three replacements. Every pack keeps original Kenney CC0-1.0 licensing and origin records.
+
+**Preview thumbnails:** The six standalone PNG attachments `pirate_hero`, `pirate_props`, `pirate_environment`, `survival_hero`, `survival_tools`, and `survival_environment` are rendered from the actual source GLB mesh geometry with simplified shading. They are not Worldkiln Editor/Play screenshots or claims of PBR parity.
+
+[Download the current manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.3.0/assets-manifest.json). Click **Refresh** in New Project > Asset Catalogue or Asset Manager > Asset Packs to retrieve the new choices. Original releases remain accessible for existing packs/dependencies.
+
+## Archived curated catalogue: v1.2.0
+
+The [v1.2.0 catalogue](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.2.0) first reduced the list to 15 selectable game-building choices but included three packs blocked by animated chests. It remains available for historical reference, not recommended for new installation.
+
 ## Archived extended selection: v1.1.0
 
 The [v1.1.0 release](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.1.0) publishes **49 new micro-pack ZIPs** independently from the complete v1.0.0 packs, plus the complete Kenney Furniture Kit. The combined catalogue holds **54 selectable packs**, including 18 individual character packs, 15 single-prop packs and themed subsets of trees, plants, rocks, nature props, pirate ships, pirate props, survival camping, survival tools, chairs, tables, beds, storage and prototype texture colors. The original five complete packs remain available at v1.0.0.
@@ -32,9 +44,9 @@ The [v1.1.0 release](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag
 
 **Packaging:** GLB files are retained from the original archives, together with all model-relative image dependencies. Other 3D formats are omitted to avoid duplicate assets and unsupported imports. The texture pack retains PNG files. Files are organized into Worldkiln's `.assets/characters/`, `.assets/entities/` or `.assets/textures/` categories. ZIP archives have deterministic content, archive-level SHA-256 hashes, and per-file sizes/hashes in the versioned `assets-manifest.json` release attachment.
 
-**Download:** See the [current combined catalogue v1.1.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.1.0) or the [original five complete packs v1.0.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.0.0). Every pack can be downloaded independently. Engine downloads stay in [Worldkiln](https://github.com/Aeowun/Worldkiln/releases).
+**Download:** See the [current combined catalogue v1.3.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.3.0) or the [original five complete packs v1.0.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.0.0). Every pack can be downloaded independently. Engine downloads stay in [Worldkiln](https://github.com/Aeowun/Worldkiln/releases).
 
-**Compatibility status:** Pack archives have been checked for source licensing, ZIP integrity, valid GLB headers and dependency files, and checksums. **Live Worldkiln editor imports, animated character behavior and project installation have not yet been visually tested.** Published Worldkiln 0.8.7 builds still require an engine update before this **separate repository** appears in the editor. The local Worldkiln development checkout contains an experimental dual-repository catalogue loader, which must pass technical/editor verification before release. No installer or existing engine release assets are changed by publishing these archives.
+**Compatibility status:** All current v1.3.0 optional asset-only packs have passed Worldkiln native archive-install / clone-to-project tests on the local development checkout. The earlier 13-pack audit found the three chest-animation failures; the v1.3.0 replacements resolved them without changing old source archives. This does not certify live Editor/Play visuals or standalone-game packaging. Published editor versions may not yet include the source changes used in these tests. No installer or existing engine release assets were changed by publishing the asset-only release.
 
 ## Distribution rules
 

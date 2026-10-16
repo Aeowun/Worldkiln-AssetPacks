@@ -95,11 +95,11 @@ def bundle(originals, output):
             targets[target] = (entry, data)
     if sum(e["target"].lower().endswith(".glb") for e, _ in targets.values()) != 3:
         raise ValueError("Expected exactly three GLB models, A/B/C")
-    with zipfile.ZipFile(output, "w") as archive:
+    with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for name in sorted(paths):
             entry, binary = paths[name]
             item = zipfile.ZipInfo(name, date_time=(2020, 1, 1, 0, 0, 0))
-            item.compress_type = zipfile.ZIP_STORED  # safe expansion ratio
+            item.compress_type = zipfile.ZIP_DEFLATED
             item.external_attr = 0o100644 << 16
             archive.writestr(item, binary)
     if any(pack["license"] != originals[0][0]["license"] for pack, _ in originals):

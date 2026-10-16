@@ -2,7 +2,16 @@
 
 **Independent asset downloads.** This repository hosts **optional** asset-only GitHub Releases for Worldkiln, separately from engine installers and release candidates. No pack is required to create a blank project.
 
-## Current in-editor catalogue: v1.3.0
+## Current in-editor catalogue: v1.6.0
+
+The [v1.6.0 asset catalogue](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.6.0) contains **15 optional packs** in the standard manifest and **19** in the extended versioned manifest. The Character selection now provides one **Kenney Characters Trio** pack with three GLBs (Characters A, B and C) plus their required PNG textures and Kenney CC0 license/source records.
+
+- [Download Kenney Characters Trio (90 KB)](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.6.0/kenney-characters-trio-1.0.0.zip).
+- [Standard v1.6.0 manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.6.0/assets-manifest.json) and [extended v2 manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.6.0/assets-manifest-v2.json).
+
+**Little Elf Animated** and the full **Kenney Blocky Characters** selection are no longer offered by the latest catalogue. Historic published archives remain available for existing installations, and existing creator-owned project assets are not deleted. Click **Refresh** in the editor's Asset Catalogue to retrieve the latest manifest.
+
+## Archived curated catalogue: v1.3.0
 
 The [v1.3.0 game-building catalogue](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.3.0) offers **13 optional asset-only packs** from this repository, plus the two existing Starter Material packs from the Worldkiln engine release: **15 selectable choices total**. Blank/offline projects do not require any asset pack.
 
@@ -15,7 +24,7 @@ Worldkiln does not yet support node-animated chests as static Actors. These comp
 
 **Asset Catalogue PNG artwork:** All **15 catalogue choices** now have public preview PNGs: six original themed Pirate/Survival images and twelve additional `catalogue_*.png` attachments. The catalogue selects one relevant image per pack. Model-pack artwork illustrates the actual ZIP-contained GLB geometry with simplified shading; the two starter Material collages show real pack BaseColor textures. These files are not Worldkiln Editor/Play screenshots. The Asset Manager and Content Browser use a separate live GLB geometry renderer rather than these PNGs.
 
-[Download the current manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.3.0/assets-manifest.json). Click **Refresh** in New Project > Asset Catalogue or Asset Manager > Asset Packs to retrieve the new choices. Original releases remain accessible for existing packs/dependencies.
+[Download the archived v1.3.0 manifest](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/download/asset-packs-v1.3.0/assets-manifest.json). Original releases remain accessible for existing pack dependencies.
 
 ## Archived curated catalogue: v1.2.0
 
@@ -44,9 +53,9 @@ The [v1.1.0 release](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag
 
 **Packaging:** GLB files are retained from the original archives, together with all model-relative image dependencies. Other 3D formats are omitted to avoid duplicate assets and unsupported imports. The texture pack retains PNG files. Files are organized into Worldkiln's `.assets/characters/`, `.assets/entities/` or `.assets/textures/` categories. ZIP archives have deterministic content, archive-level SHA-256 hashes, and per-file sizes/hashes in the versioned `assets-manifest.json` release attachment.
 
-**Download:** See the [current combined catalogue v1.3.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.3.0) or the [original five complete packs v1.0.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.0.0). Every pack can be downloaded independently. Engine downloads stay in [Worldkiln](https://github.com/Aeowun/Worldkiln/releases).
+**Download:** See the [current combined catalogue v1.6.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.6.0) or the [original five complete packs v1.0.0](https://github.com/Aeowun/Worldkiln-AssetPacks/releases/tag/asset-packs-v1.0.0). Every pack can be downloaded independently. Engine downloads stay in [Worldkiln](https://github.com/Aeowun/Worldkiln/releases).
 
-**Compatibility status:** All current v1.3.0 optional asset-only packs have passed Worldkiln native archive-install / clone-to-project tests on the local development checkout. The earlier 13-pack audit found the three chest-animation failures; the v1.3.0 replacements resolved them without changing old source archives. This does not certify live Editor/Play visuals or standalone-game packaging. Published editor versions may not yet include the source changes used in these tests. No installer or existing engine release assets were changed by publishing the asset-only release.
+**Compatibility status:** All v1.3.0 optional asset-only packs have passed Worldkiln native archive-install / clone-to-project tests on the local development checkout. The earlier 13-pack audit found the three chest-animation failures; the v1.3.0 replacements resolved them without changing old source archives. This does not certify live Editor/Play visuals or standalone-game packaging. Published editor versions may not yet include the source changes used in these tests. No installer or existing engine release assets were changed by publishing the asset-only release.
 
 ## Distribution rules
 
